@@ -5,14 +5,15 @@
 
 ### 1. Different 802.11 PHY layer standards and comparison
 
-| Standard   | Band        | Max Speed     | Modulation | Key Features |
-|------------|-------------|---------------|------------|--------------|
-| 802.11a    | 5 GHz       | 54 Mbps       | OFDM       | Less interference |
-| 802.11b    | 2.4 GHz     | 11 Mbps       | DSSS       | Longer range |
-| 802.11g    | 2.4 GHz     | 54 Mbps       | OFDM       | Backward compatible |
-| 802.11n    | 2.4/5 GHz   | 600 Mbps      | OFDM       | MIMO support |
-| 802.11ac   | 5 GHz       | ~3.5 Gbps     | OFDM       | MU-MIMO, wider channels |
-| 802.11ax   | 2.4/5 GHz   | ~9.6 Gbps     | OFDMA      | Better efficiency, high density |
+| Standard   | Band            | Max Speed        | Modulation       | Key Features |
+|------------|-----------------|------------------|------------------|--------------|
+| 802.11a    | 5 GHz           | 54 Mbps          | OFDM             | Less interference |
+| 802.11b    | 2.4 GHz         | 11 Mbps          | DSSS             | Longer range |
+| 802.11g    | 2.4 GHz         | 54 Mbps          | OFDM             | Backward compatible |
+| 802.11n    | 2.4/5 GHz       | 600 Mbps         | OFDM             | MIMO support |
+| 802.11ac   | 5 GHz           | ~3.5 Gbps        | OFDM             | MU-MIMO, 80/160 MHz channels |
+| 802.11ax   | 2.4/5/6 GHz     | ~9.6 Gbps        | OFDMA, 1024-QAM  | High efficiency, dense environments |
+| 802.11be   | 2.4/5/6 GHz     | ~46 Gbps         | 4096-QAM         | Multi-Link Operation (MLO), ultra-low latency, wider channels (320 MHz) |
 
 ---
 
