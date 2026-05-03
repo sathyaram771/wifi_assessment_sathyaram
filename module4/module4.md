@@ -3,6 +3,70 @@
 
 ---
 
+### 1. Significance of MAC Layer and Its Position in the OSI Model
+
+The **MAC (Media Access Control) layer** is a sublayer of the **Data Link Layer (Layer 2)** in the OSI model.
+
+### Position in OSI Model:
+- Layer 2 (Data Link Layer) is divided into:
+  - **LLC (Logical Link Control)**
+  - **MAC (Media Access Control)**
+
+### Significance of the MAC Layer:
+- **Medium Access Control:**  
+  Determines how devices share and access the wireless medium (e.g., CSMA/CA in Wi-Fi).
+  
+- **Frame Formatting:**  
+  Encapsulates data into frames and defines the structure for transmission.
+
+- **Addressing:**  
+  Uses **MAC addresses** (unique hardware identifiers) to ensure correct delivery within a local network.
+
+- **Error Detection:**  
+  Includes mechanisms like **Frame Check Sequence (FCS)** to detect transmission errors.
+
+- **Collision Avoidance (in Wi-Fi):**  
+  Uses techniques such as **backoff timers** and acknowledgments to minimize collisions in a shared medium.
+
+- **Reliable Delivery:**  
+  Supports retransmissions and acknowledgments to improve reliability.
+
+---
+
+### 2. Frame Format of the 802.11 MAC Header and Purpose of Each Field
+
+An **802.11 MAC frame** consists of three main parts:
+1. MAC Header
+2. Frame Body (payload)
+3. FCS (Frame Check Sequence)
+
+### 802.11 MAC Header Fields:
+
+| Field | Size | Purpose |
+|------|------|--------|
+| **Frame Control** | 2 bytes | Defines frame type (data, control, management), protocol version, and control flags |
+| **Duration/ID** | 2 bytes | Specifies how long the channel will be reserved (used for NAV - Network Allocation Vector) |
+| **Address 1 (Receiver)** | 6 bytes | Destination MAC address |
+| **Address 2 (Transmitter)** | 6 bytes | Source MAC address |
+| **Address 3** | 6 bytes | Used for filtering/routing (e.g., BSSID in infrastructure networks) |
+| **Sequence Control** | 2 bytes | Contains sequence number and fragment number for frame ordering and reassembly |
+| **Address 4** *(optional)* | 6 bytes | Used in special cases like wireless bridging (WDS) |
+| **QoS Control** *(optional)* | 2 bytes | Supports Quality of Service (traffic prioritization) |
+| **HT Control** *(optional)* | 4 bytes | Used for high-throughput (802.11n/ac/ax) features |
+
+---
+
+### Additional Components:
+
+#### Frame Body:
+- Contains the actual payload (data being transmitted)
+
+#### FCS (Frame Check Sequence):
+- **4 bytes**
+- Used for **error detection** to ensure data integrity
+
+---
+
 ### 3. MAC layer functionalities (Management, Control, Data)
 
 #### **1. Management Functions**
